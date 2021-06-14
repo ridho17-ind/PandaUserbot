@@ -11,12 +11,12 @@ from ..utils import is_admin
 plugin_category = "admin"
 
 
-@pandaub.ilhammansiz_cmd(incoming=True, groups_only=True)
+@pandaub.panda_cmd(incoming=True, groups_only=True)
 async def on_new_message(event):
     name = event.raw_text
     snips = sql.get_chat_blacklist(event.chat_id)
-    catadmin = await is_admin(event.client, event.chat_id, event.client.uid)
-    if not catadmin:
+    pandaadmin = await is_admin(event.client, event.chat_id, event.client.uid)
+    if not pandaadmin:
         return
     for snip in snips:
         pattern = r"( |^|[^\w])" + re.escape(snip) + r"( |$|[^\w])"
