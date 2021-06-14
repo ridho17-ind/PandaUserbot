@@ -74,3 +74,5 @@ SUDO_LIST = {}
 # for later purposes
 INT_PLUG = ""
 LOAD_PLUG = {}
+TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
+        
