@@ -587,7 +587,9 @@ async def pmpermit_on(event):
                 event, " __Permit telah diaktifkan untuk akun Anda dengan sukses__"
             )
         else:
-            await edit_delete(event, "__Permit telah diaktifkan untuk akun Anda dengan sukses__")
+            await edit_delete(
+                event, "__Permit telah diaktifkan untuk akun Anda dengan sukses__"
+            )
     else:
         if gvarstatus("pmpermit") is not None:
             delgvar("pmpermit")
