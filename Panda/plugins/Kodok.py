@@ -1,6 +1,6 @@
 from telethon.errors import ChatSendInlineForbiddenError, ChatSendStickersForbiddenError
 
-from . import pandaub, edit_or_reply
+from . import pandaub
 
 plugin_category = "misc"
 
@@ -44,6 +44,8 @@ async def honkasays(event):
             )
         await event.delete()
     except ChatSendInlineForbiddenError:
-        await event.edit("`Boss! Saya tidak bisa menggunakan hal-hal sebaris di sini...`")
+        await event.edit(
+            "`Boss! Saya tidak bisa menggunakan hal-hal sebaris di sini...`"
+        )
     except ChatSendStickersForbiddenError:
         await event.edit("🐼 Maaf Panda, saya tidak bisa mengirim stiker ke sini !!🐼")
