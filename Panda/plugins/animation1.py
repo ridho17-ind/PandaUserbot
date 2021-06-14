@@ -10,7 +10,7 @@ plugin_category = "fun"
     pattern="stupid$",
     command=("stupid", plugin_category),
     info={
-        "header": "throwing brain in dustbin animation",
+        "header": "animasi orang gila",
         "usage": "{tr}stupid",
     },
 )
