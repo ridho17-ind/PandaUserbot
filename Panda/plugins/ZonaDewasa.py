@@ -7,8 +7,15 @@ import requests
 from Panda import *
 
 
-@bot.on(admin_cmd("payudara$"))
-@bot.on(sudo_cmd(pattern="payudara$", allow_sudo=True))
+@pandaub.ilhammansiz_cmd(
+    pattern="payudara (.*)",
+    command=("payudara", plugin_category),
+    info={
+        "header": "Menemukan sesuatu.",
+        "usage": "{tr}payudara",
+        "examples": "{tr}payudara",
+    },
+)
 async def boobs(event):
     if event.fwd_from:
         return
