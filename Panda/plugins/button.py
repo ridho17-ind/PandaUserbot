@@ -18,7 +18,7 @@ plugin_category = "tools"
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
 
 
-@pandaub.ilhamansiz_cmd(
+@pandaub.ilhammansiz_cmd(
     pattern="cbutton(?: |$)(.*)",
     command=("cbutton", plugin_category),
     info={
