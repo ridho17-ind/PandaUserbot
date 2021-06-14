@@ -22,9 +22,9 @@ plugin_category = "fun"
 async def boobs(event):
     if event.fwd_from:
         return
-    if not os.path.isdir(Var.TEMP_DOWNLOAD_DIRECTORY):
-        os.makedirs(Var.TEMP_DOWNLOAD_DIRECTORY)
-    pic_loc = os.path.join(Var.TEMP_DOWNLOAD_DIRECTORY, "bobs.jpg")
+    if not os.path.isdir(Var.TMP_DOWNLOAD_DIRECTORY):
+        os.makedirs(Var.TMP_DOWNLOAD_DIRECTORY)
+    pic_loc = os.path.join(Var.TMP_DOWNLOAD_DIRECTORY, "bobs.jpg")
     a = await event.reply("Menemukan beberapa payudara besar untukmu 😂")
     await asyncio.sleep(0.5)
     await a.edit("Ini besar banget nih 😂")
