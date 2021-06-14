@@ -1,7 +1,7 @@
 import asyncio
 from collections import deque
 
-from . import pandaub, edit_or_reply
+from . import edit_or_reply, pandaub
 
 plugin_category = "fun"
 
