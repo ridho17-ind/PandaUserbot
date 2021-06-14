@@ -7,7 +7,7 @@ from Panda import pandaub
 plugin_category = "misc"
 
 
-@pandaub.panda_cmd(
+@pandaub.ilhammansiz_cmd(
     pattern="sa$",
     command=("sa", plugin_category),
     info={
