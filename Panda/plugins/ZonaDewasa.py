@@ -9,6 +9,7 @@ from Panda import pandaub
 
 plugin_category = "fun"
 
+
 @pandaub.ilhammansiz_cmd(
     pattern="payudara (.*)",
     command=("payudara", plugin_category),
