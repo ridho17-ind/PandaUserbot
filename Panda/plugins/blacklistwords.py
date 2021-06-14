@@ -11,7 +11,7 @@ from ..utils import is_admin
 plugin_category = "admin"
 
 
-@pandaub.panda_cmd(incoming=True, groups_only=True)
+@pandaub.bot_cmd(incoming=True, groups_only=True)
 async def on_new_message(event):
     name = event.raw_text
     snips = sql.get_chat_blacklist(event.chat_id)
