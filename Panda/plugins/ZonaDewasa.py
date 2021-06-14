@@ -11,7 +11,7 @@ plugin_category = "fun"
 
 
 @pandaub.ilhammansiz_cmd(
-    pattern="payudara (.*)",
+    pattern="payudara(?: |$)(.*)",
     command=("payudara", plugin_category),
     info={
         "header": "Menemukan sesuatu.",
