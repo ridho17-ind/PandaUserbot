@@ -1,3 +1,5 @@
+#PORT BY ILHAM MANSIEZ
+#KARENA GABUT JADI GUE BUAT ASTAGA NGAKAK
 import asyncio
 import os
 import urllib
