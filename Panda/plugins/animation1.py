@@ -1,7 +1,8 @@
 import asyncio
 from collections import deque
 
-from . import ALIVE_NAME, edit_or_reply, pandaub
+from . import ALIVE_NAME
+from . import edit_or_reply, pandaub
 
 plugin_category = "fun"
 
