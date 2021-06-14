@@ -181,8 +181,8 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
             "deploy": "Bot will update completly with requirements also.",
         },
         "usage": [
-            "{tr}update deploy",
-            "{tr}update deploy",
+            "{tr}update ",
+            "{tr}update now",
             "{tr}update deploy",
         ],
     },
