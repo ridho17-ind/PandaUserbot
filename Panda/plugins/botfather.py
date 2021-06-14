@@ -1,6 +1,7 @@
 from telethon.tl.functions.contacts import UnblockRequest
 from telethon.errors.rpcerrorlist import YouBlockedUserError
-from . import pandaub
+from Panda import pandaub
+
 plugin_category = "utils"
 
 chat = "@BotFather"
