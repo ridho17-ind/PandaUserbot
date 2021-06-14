@@ -54,7 +54,7 @@ def ibuild_keyboard(buttons):
 
 
 def main_menu():
-    text = f"╔══════════════\n╠🐼 [𝗛𝗲𝗹𝗽 𝗜𝗻𝗹𝗶𝗻𝗲 𝗕𝗼𝘁](https://t.me/TEAMSquadUserbotSupport)\n╠🐼 𝗣𝗮𝗻𝗱𝗮-𝗨𝘀𝗲𝗿𝗯𝗼𝘁\n╠🐼 𝗨𝘀𝗲𝗿 :{mention}\n╚══════════════🐼"
+    text = f"╔══════════════\n╠🐼 𝗛𝗲𝗹𝗽 𝗜𝗻𝗹𝗶𝗻𝗲 𝗕𝗼𝘁\n╠🐼 𝗣𝗮𝗻𝗱𝗮-𝗨𝘀𝗲𝗿𝗯𝗼𝘁\n╠🐼 𝗨𝘀𝗲𝗿 :{mention}\n╚══════════════🐼"
     buttons = [
         (
             Button.inline(
@@ -538,7 +538,7 @@ async def on_plugin_callback_query_handler(event):
 async def on_plug_in_callback_query_handler(event):
     category = str(event.pattern_match.group(1).decode("UTF-8"))
     buttons = paginate_help(0, GRP_INFO[category], category)
-    text = f"**[🐼](https://telegra.ph/file/08a3d412e29a1351b7aaa.jpg)═══════════🐼\nCategory: **{category}\
+    text = f"**🐼═══════════🐼\nCategory: **{category}\
         \n**Total plugins :** {len(GRP_INFO[category])}\
         \n**Total Commands:** {command_in_category(category)}\n🐼══════════════🐼"
     await event.edit(text, buttons=buttons)
@@ -556,7 +556,7 @@ async def on_plug_in_callback_query_handler(event):
     pgno = int(event.pattern_match.group(3).decode("UTF-8"))
     if mtype == "plugin":
         buttons = paginate_help(pgno, GRP_INFO[category], category)
-        text = f"**[🐼](https://telegra.ph/file/08a3d412e29a1351b7aaa.jpg)═══════════🐼\nCategory: **`{category}`\
+        text = f"**🐼═══════════🐼\nCategory: **`{category}`\
             \n**Total plugins :** __{len(GRP_INFO[category])}__\
             \n**Total Commands:** __{command_in_category(category)}__\n🐼══════════════🐼"
     else:
@@ -570,7 +570,7 @@ async def on_plug_in_callback_query_handler(event):
             category_plugins=category_plugins,
             category_pgno=category_pgno,
         )
-        text = f"**[🐼](https://telegra.ph/file/08a3d412e29a1351b7aaa.jpg)═══════════🐼\nPlugin: **`{category}`\
+        text = f"**🐼═══════════🐼\nPlugin: **`{category}`\
                 \n**Category: **__{getkey(category)}__\
                 \n**Total Commands:** __{len(PLG_INFO[category])}__\n🐼══════════════🐼"
     await event.edit(text, buttons=buttons)
