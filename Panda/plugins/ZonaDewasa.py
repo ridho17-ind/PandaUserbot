@@ -7,6 +7,7 @@ import requests
 from Panda import *
 from Panda import pandaub
 
+plugin_category = "fun"
 
 @pandaub.ilhammansiz_cmd(
     pattern="payudara (.*)",
