@@ -3,7 +3,7 @@ from . import pandaub
 plugin_category = "useless"
 
 
-@pandaub.panda_cmd(
+@pandaub.ilhammansiz_cmd(
     pattern="xoagame$",
     command=("xoagame", plugin_category),
     info={
