@@ -56,7 +56,7 @@ class Config(object):
         or os.environ.get("PM_LOGGR_BOT_API_ID")
         or 0
     )
-     
+
     # Custom vars for userbot
     # set this will channel id of your custom plugins
     PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL") or 0)
