@@ -1,6 +1,4 @@
-import asyncio
-from telethon import events
-from . import pandaub, edit_or_reply
+from . import pandaub
 
 plugin_category = "useless"
 
