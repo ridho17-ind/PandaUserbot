@@ -1,6 +1,6 @@
 from telethon.errors import ChatSendInlineForbiddenError, ChatSendStickersForbiddenError
 
-from . import pandaub
+from Panda import pandaub
 
 plugin_category = "misc"
 
