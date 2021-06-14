@@ -354,7 +354,7 @@ async def endgmute(event):
             )
 
 
-@pannsaub.ilhammansiz_cmd(incoming=True)
+@pandaub.ilhammansiz_cmd(incoming=True)
 async def watcher(event):
     if is_muted(event.sender_id, "gmute"):
         await event.delete()
