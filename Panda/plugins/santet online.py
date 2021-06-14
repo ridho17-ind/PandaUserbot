@@ -1,7 +1,9 @@
 from time import sleep
+
 from Panda import pandaub
 
 plugin_category = "fun"
+
 
 @pandaub.ilhammansiz_cmd(
     pattern="santet(?: |$)(.*)",
@@ -321,4 +323,3 @@ async def typewriter(typew):
     await typew.edit(str(number) + "%   ████████████████▌")
     sleep(1)
     await typew.edit("`Target Berhasil Tersantet Online:v`")
-
