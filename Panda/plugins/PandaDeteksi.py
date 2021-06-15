@@ -1,6 +1,6 @@
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from Panda import pandaub
+from Panda import pandaub, bot
 
 plugin_category = "utils"
 
@@ -31,7 +31,7 @@ async def _(event):
                 u = await event.client.get_entity(input_str)
             except ValueError:
                 await edit.event(
-                    "`Petercord, Mohon Berikan ID/Username untuk menemukan Riwayat`"
+                    "`🐼 Panda, Mohon Berikan ID/Username untuk menemukan Riwayat`"
                 )
             uid = u.id
     else:
