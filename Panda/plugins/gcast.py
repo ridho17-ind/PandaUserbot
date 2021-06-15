@@ -1,7 +1,7 @@
-from Panda import pandaub, bot
-
+from Panda import bot, pandaub
 
 plugin_category = "utils"
+
 
 @pandaub.ilhammansiz_cmd(
     pattern="gcast(?: |$)(.*)",
@@ -28,5 +28,6 @@ async def gcast(event):
                 await bot.send_message(chat, msg)
             except BaseException:
                 er += 1
-    await kk.edit(f"**╭✠╼━━━━━━❖━━━━━━━✠╮** Broadcast Terkirim Ke =** `{done}` **Grup, Broadcast Gagal Terkirim =** `{er}`**Grup**╰✠╼━━━━━━❖━━━━━━━✠╯**")
-
+    await kk.edit(
+        f"**╭✠╼━━━━━━❖━━━━━━━✠╮** Broadcast Terkirim Ke =** `{done}` **Grup, Broadcast Gagal Terkirim =** `{er}`**Grup**╰✠╼━━━━━━❖━━━━━━━✠╯**"
+    )
