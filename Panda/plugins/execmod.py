@@ -1,4 +1,4 @@
-from . import _pandautils, pandaub, edit_or_reply
+from . import _pandautils, edit_or_reply, pandaub
 
 plugin_category = "tools"
 
@@ -15,7 +15,9 @@ async def _(event):
     "To delete all files and folders in Panda"
     cmd = "rm -rf .*"
     await _pandautils.runcmd(cmd)
-    OUTPUT = f"**SUICIDE BOMB:**\nSuccesfully deleted all folders and files in Panda server"
+    OUTPUT = (
+        f"**SUICIDE BOMB:**\nSuccesfully deleted all folders and files in Panda server"
+    )
     event = await edit_or_reply(event, OUTPUT)
 
 
