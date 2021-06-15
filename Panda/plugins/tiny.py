@@ -1,11 +1,10 @@
-from PIL import Image
 import os
+
+from PIL import Image
+
 from Panda import pandaub
 
 plugin_category = "utils"
-
-
-
 
 
 @pandaub.panda_cmd(
