@@ -8,6 +8,7 @@ from Panda import bot, pandaub
 ILHAM MANSIZ = Config.TMP_DOWNLOAD_DIRECTORY
 
 
+plugin_category = "misc"
 
 @pandaub.panda_cmd(
     pattern="kekuatan(?: |$)(.*)",
