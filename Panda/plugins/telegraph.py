@@ -4,8 +4,9 @@ from datetime import datetime
 from PIL import Image
 from telegraph import Telegraph, exceptions, upload_file
 
-from ..Config import Config
 from Panda import pandaub
+
+from ..Config import Config
 
 plugin_category = "misc"
 
