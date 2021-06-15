@@ -4,7 +4,7 @@ from telethon.errors.rpcerrorlist import YouBlockedUserError
 from Panda import bot, pandaub
 plugin_category = "bot"
 
-@pandaub.panda_cmd(
+@pandaub.ilhammansiz_cmd(
     pattern="ig(?: |$)(.*)",
     command=("ig", plugin_category),
     info={
