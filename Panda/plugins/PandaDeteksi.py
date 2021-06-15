@@ -1,6 +1,6 @@
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 
-from Panda import pandaub, bot
+from Panda import bot, pandaub
 
 plugin_category = "utils"
 
