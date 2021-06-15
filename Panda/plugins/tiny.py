@@ -7,7 +7,7 @@ from Panda import pandaub
 plugin_category = "utils"
 
 
-@pandaub.panda_cmd(
+@pandaub.ilhammansiz_cmd(
     pattern="tiny(?: |$)(.*)",
     command=("tiny", plugin_category),
     info={
