@@ -5,8 +5,6 @@ from Panda import bot, pandaub
 plugin_category = "misc"
 
 
-
-
 @pandaub.ilhammansiz_cmd(
     pattern="frog(?: |$)(.*)",
     command=("frog", plugin_category),
@@ -46,6 +44,8 @@ async def honkasays(event):
             )
         await event.delete()
     except ChatSendInlineForbiddenError:
-        await event.edit("`Boss! Saya tidak bisa menggunakan hal-hal sebaris di sini...`")
+        await event.edit(
+            "`Boss! Saya tidak bisa menggunakan hal-hal sebaris di sini...`"
+        )
     except ChatSendStickersForbiddenError:
         await event.edit("🐼 Maaf Panda, saya tidak bisa mengirim stiker ke sini !!")
