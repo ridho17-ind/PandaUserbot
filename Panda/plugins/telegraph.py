@@ -4,6 +4,7 @@ from datetime import datetime
 from PIL import Image
 from telegraph import Telegraph, exceptions, upload_file
 
+from ..Config import Config
 from Panda import pandaub
 
 plugin_category = "misc"
@@ -37,15 +38,15 @@ async def telegraphs(graph):
     if not graph.text[0].isalpha() and graph.text[0] not in ("/", "#", "@", "!"):
         if graph.fwd_from:
             return
-        if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
-            os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
+        if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
+            os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
         if graph.reply_to_msg_id:
             start = datetime.now()
             r_message = await graph.get_reply_message()
             input_str = graph.pattern_match.group(1)
             if input_str == "m":
                 downloaded_file_name = await bot.download_media(
-                    r_message, TEMP_DOWNLOAD_DIRECTORY
+                    r_message, Config.TMP_DOWNLOAD_DIRECTORY
                 )
                 end = datetime.now()
                 ms = (end - start).seconds
