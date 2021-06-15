@@ -7,6 +7,8 @@ from telegraph import Telegraph, exceptions, upload_file
 from Panda import pandaub
 
 from ..Config import Config
+from ..core.managers import edit_or_reply
+from . import BOTLOG, BOTLOG_CHATID
 
 plugin_category = "misc"
 
