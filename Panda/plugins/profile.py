@@ -106,11 +106,9 @@ async def _(event):
                     await pandaevent.edit("`size must be less than 2 mb`")
                     os.remove(photo)
                     return
-                pandapic = None
-                pandavideo = await event.client.upload_file(photo)
+                await event.client.upload_file(photo)
             else:
-                pandapic = await event.client.upload_file(photo)
-                pandavideo = None
+                await event.client.upload_file(photo)
             try:
                 await event.client(
                     functions.photos.UploadProfilePhotoRequest(
