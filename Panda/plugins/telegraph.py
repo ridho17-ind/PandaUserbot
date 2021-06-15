@@ -104,7 +104,7 @@ async def _(event):
         ms = (end - start).seconds
         panda = f"https://telegra.ph/{response['path']}"
         await pandaevent.edit(
-            f"**link : ** [telegraph]({cat})\
+            f"**link : ** [telegraph]({panda})\
                  \n**Time Taken : **`{ms} seconds.`",
             link_preview=True,
         )
