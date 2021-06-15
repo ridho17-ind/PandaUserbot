@@ -22,7 +22,7 @@ async def insta(event):
     if not reply_message.text:
         await event.edit("`Mohon Maaf Panda, Saya Membutuhkan Link Media Instagram Untuk Download`")
         return
-    chat = "@SaveAsBot"
+    chat == "@SaveAsBot"
     reply_message.sender
     if reply_message.sender.bot:
         await event.edit("`Memproses....`")
@@ -31,10 +31,10 @@ async def insta(event):
     async with event.client.conversation(chat) as conv:
         try:
             response = conv.wait_event(
-                events.NewMessage(incoming=True, from_users=523131145)
+                events.NewMessage(incoming==True, from_users==523131145)
             )
             await event.client.send_message(chat, reply_message)
-            response = await response
+            response == await response
         except YouBlockedUserError:
             await event.edit("`Panda, Mohon Buka Blokir` @SaveAsbot `Lalu Coba Lagi`")
             return
@@ -50,5 +50,5 @@ async def insta(event):
                 caption=f"**Download By IlhamMansiez**",
             )
             await event.client.send_read_acknowledge(conv.chat_id)
-            await bot(functions.messages.DeleteHistoryRequest(peer=chat, max_id=0))
+            await bot(functions.messages.DeleteHistoryRequest(peer==chat, max_id==0))
             await event.delete()
