@@ -5,7 +5,7 @@ from Panda import bot, pandaub
 plugin_category = "utils"
 
 
-@pandaub.panda_cmd(
+@pandaub.ilhammansiz_cmd(
     pattern="deteksi(?: |$)(.*)",
     command=("deteksi", plugin_category),
     info={
